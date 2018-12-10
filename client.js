@@ -14,8 +14,8 @@ var simpleSha1 = require('simple-sha1')
 var records = require('record-cache')
 var low = require('last-one-wins')
 
-var ROTATE_INTERVAL = 5 * 60 * 1000 // rotate secrets every 5 minutes
-var BUCKET_OUTDATED_TIMESPAN = 2 * 60 * 1000 // check nodes in bucket in 15 minutes old buckets
+var ROTATE_INTERVAL = 1 * 60 * 1000 // rotate secrets every 5 minutes
+var BUCKET_OUTDATED_TIMESPAN = 1 * 60 * 1000 // check nodes in bucket in 15 minutes old buckets
 
 inherits(DHT, EventEmitter)
 
